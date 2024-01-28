@@ -1,0 +1,148 @@
+/* Google fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.profile__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 375px;
+    width: 100%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile__card::before{
+    content: "";
+    width: 100%;
+    height: 35%;
+    background-color: #3277C8;
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+ .image__box{
+    position: relative;
+    top: 20px;
+    background-color: #3277C8;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 25px;
+    
+}
+
+.image__box .profile__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -2%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.content{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.content .name{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.content .job{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.social__link{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.social__link .link{
+    margin: 0 10px;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.social__link .facebook{
+    background-color: #0863F7;
+}
+.social__link .twitter{
+    background-color: #00A9E8;
+}
+.social__link .instagram{
+    background-color: #D83D6C;
+}
+.social__link .youtube{
+    background-color: #FF0000;
+}
+
+.contact__btn{
+    display: flex;
+    justify-content: center;
+}
+
+.contact__btn .btn{
+    color: #fff;
+    border: none;
+    background-color: #3277C8;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.contact__btn .btn:hover{
+    background-color: #0863F7;
+}
+
+.analytics{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.analytics .data{
+    font-size: 20px;
+    border-right: 2px solid #DEDEDE;
+    padding: 0 20px;
+}
+
+.analytics .data:last-of-type{
+    border-right: none;
+}
+
+
